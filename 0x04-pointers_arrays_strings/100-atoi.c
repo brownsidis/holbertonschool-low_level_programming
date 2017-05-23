@@ -8,9 +8,9 @@
  */
 int _atoi(char *s)
 {
-	int i, j, n, m;
+	int i, j, n, m, p;
 
-	i = n = m = 0;
+	i = n = m = p = 0;
 	while (*(s + i))
 	{
 		if ((*(s + i) >= '0') && (*(s + i) <= '9'))
@@ -27,9 +27,11 @@ int _atoi(char *s)
 	{
 		if (*(s + i) == '-')
 			m++;
+		else if (*(s + i) == '+')
+			p++;
 		i++;
 	}
-	if (m % 2)
+	if (m - p > 0)
 		n = -n;
 	return (n);
 }
