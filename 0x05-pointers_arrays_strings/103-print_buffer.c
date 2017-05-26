@@ -48,7 +48,7 @@ void print_buffer(char *b, int size)
 
 	for (i = 0; i <= size / 10 && size; i++)
 	{
-		printf("%08x: ", i);
+		printf("%08x: ", i * 10);
 		if (i < size / 10)
 		{
 			print_line(b, 9, i);
