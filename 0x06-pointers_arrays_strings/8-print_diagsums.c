@@ -10,19 +10,17 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, p;
-	long int l, r;
+	int i, j, p, l = 0, r = 0;
 
 	for (i = 0; i < size; i++)
 	{
-		for (j = 0; j < size; j++)
-		{
-			p = (size * i) + j;
-			if (i == j)
-				l += a[p];
-			if (j == (size - 1 - i))
-				r += a[p];
-		}
+		p = (i * size) + i;
+		l += *(a + p);
 	}
-	printf("%ld, %ld\n", l, r);
+	for (j = 0; j < size; j++)
+	{
+		p = (j * size) + (size - 1 - j);
+		r += *(a + p);
+	}
+	printf("%i, %i\n", l, r);
 }
