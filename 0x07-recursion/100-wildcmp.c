@@ -1,5 +1,11 @@
 #include "holberton.h"
-
+/**
+ * wildcard - checks for the wildcards
+ * @s3: string to compare to
+ * @s4: string to check
+ *
+ * Return: pointer to spot in s3 that matches s4
+ */
 char *wildcard(char *s3, char *s4)
 {
 	if (*s3 != *s4)
