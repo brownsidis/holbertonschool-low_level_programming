@@ -9,7 +9,7 @@
  */
 int wrdcnt(char *s)
 {
-	int i, n;
+	int i, n = 0;
 
 	for (i = 0; s[i]; i++)
 	{
