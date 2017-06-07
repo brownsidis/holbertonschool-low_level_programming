@@ -57,7 +57,7 @@ char **strtow(char *str)
 			{
 				for (k = 0; k < wc; k++)
 					free(w[k]);
-				free(w[n]);
+				free(w[n - 1]);
 				free(w);
 				return (NULL);
 			}
