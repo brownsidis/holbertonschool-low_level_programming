@@ -10,22 +10,18 @@
  */
 void _print(char *str, int l)
 {
-	int i;
+	int i, j;
 
-	if (str[0] == '0')
+	i = j = 0;
+	while (i < l)
 	{
-		for (i = 1; i < l; i++)
-		{
+		if (str[i] != '0')
+			j = 1;
+		if (j || i == l - 1)
 			_putchar(str[i]);
-		}
+		i++;
 	}
-	else
-	{
-		for (i = 0; i < l; i++)
-		{
-			_putchar(str[i]);
-		}
-	}
+
 	_putchar('\n');
 	free(str);
 }
