@@ -1,6 +1,20 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+void print_opcodes(char *a, int n)
+{
+	int i;
+
+	for (i = 0; i < n; i++)
+	{
+		printf("%.2hhx", a[i]);
+		if (i < n - 1)
+			printf(" ");
+	}
+	printf("\n");
+
+}
+
 /**
  * main - prints the opcodes of its own main function
  * @argc: number of arguments passed to the function
@@ -11,7 +25,6 @@
 int main(int argc, char **argv)
 {
 	int n;
-	int (*f)(int, char **);
 
 	if (argc != 2)
 	{
@@ -24,7 +37,6 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(2);
 	}
-	f = &main;
-	printf("%p\n", f);
+	print_opcodes((char *)&main, n);
 	return (0);
 }
