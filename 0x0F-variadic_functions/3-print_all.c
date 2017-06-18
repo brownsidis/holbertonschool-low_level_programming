@@ -80,11 +80,11 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", separator);
 				p[j].f(valist);
+				separator = ", ";
 				break;
 			}
 			j++;
 		}
-		separator = ", ";
 		i++;
 	}
 	va_end(valist);
