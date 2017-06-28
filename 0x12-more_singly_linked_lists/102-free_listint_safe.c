@@ -49,13 +49,10 @@ size_t free_listint_safe(listint_t **head)
 		{
 			if (*head == list[i])
 			{
-				break;
+				*head = NULL;
+				free(list);
+				return(num);
 			}
-		}
-		if (list != NULL && *head == list[i])
-		{
-			*head = NULL;
-			break;
 		}
 		num++;
 		list = _ra(list, num, *head);
