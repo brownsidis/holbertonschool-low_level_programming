@@ -53,7 +53,10 @@ size_t free_listint_safe(listint_t **head)
 			}
 		}
 		if (list != NULL && *head == list[i])
+		{
+			*head = NULL;
 			break;
+		}
 		num++;
 		list = _ra(list, num, *head);
 		next = (*head)->next;
@@ -61,6 +64,5 @@ size_t free_listint_safe(listint_t **head)
 		*head = next;
 	}
 	free(list);
-	*head = NULL;
 	return (num);
 }
