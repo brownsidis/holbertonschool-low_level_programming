@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * flip_bit - number of different bits between two numbers
+ * flip_bits - number of different bits between two numbers
  * @n: first number
  * @m: second number
  *
