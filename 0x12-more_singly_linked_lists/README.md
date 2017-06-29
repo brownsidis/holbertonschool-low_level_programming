@@ -12,3 +12,18 @@ Holberton School's follow-up project on singly linked lists
 * **8-sum_listint.c** - returns the sum of all the data (n) of a `listint_t` linked list.
 * **9-insert_nodeint.c** - inserts a new node at a given position.
 * **10-delete_nodeint.c** - deletes the node at index `index` of a `listint_t` linked list.
+* **100-reverse_listint.c** - reverses a `listint_t` linked list with the specifications:
+  * Not allowed to use more than 1 loop
+  * Not allowed to use `malloc`, `free` or arrays
+  * Can only declare a maximum of two variables
+* **101-print_listint_safe.c** - prints a `listint_t` linked list with the specifications:
+  * Can print lists with a loop
+  * Should go through the list only once
+  * If the function fails, exit the program with status `98`
+* **102-free_listint_safe.c** - frees a `listint_t` list with the specifications:
+  * Can free lists with a loop
+  * Should go though the list only once
+  * Sets the `head` to `NULL`
+* **103-find_loop.c** - finds the loop in a `listint_t` list with the specifications:
+  * Not allowed to use `malloc`, `free` or arrays
+  * Can only declare a maximum of two variables
