@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	unsigned int i;
+	unsigned int i, b;
 	size_t len, add;
 	char *l = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
 	char p[7] = "      ";
@@ -22,9 +22,17 @@ int main(int argc, char *argv[])
 	}
 	len = strlen(argv[1]);
 	p[0] = l[(len ^ 59) & 63];
-	for (i = 0; len >= i; i++)
+	for (i = 0; i < len; i++)
 		add += argv[1][i];
 	p[1] = l[(add ^ 79) & 63];
+	for (i = 0; i < len; i++)
+		b *= argv[1][i];
+	p[2] = l[(b ^ 85) & 63];
+	for (b = argv[1][0], i = 0; i < len; i++)
+		if (b <= argv[1][i])
+			b = argv[1][i];
+	srand(b ^ 14);
+	p[3] = l[rand() & 63];
 	printf("%s\n", p);
 	return (0);
 }
