@@ -55,10 +55,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(tmp->key, key) == 0)
 		{
-			free(tmp->value);
 			new_value = strdup(value);
 			if (new_value == NULL)
 				return (0);
+			free(tmp->value);
 			tmp->value = new_value;
 			return (1);
 		}
