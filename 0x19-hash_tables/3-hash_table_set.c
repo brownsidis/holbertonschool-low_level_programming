@@ -24,7 +24,7 @@ hash_node_t *make_hash_node(const char *key, const char *value)
 	if (node->value == NULL)
 	{
 		free(node->key);
-		free(node->value);
+		free(node);
 		return (NULL);
 	}
 	node->next = NULL;
