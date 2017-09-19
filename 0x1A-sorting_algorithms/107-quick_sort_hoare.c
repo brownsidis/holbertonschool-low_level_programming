@@ -35,7 +35,7 @@ size_t partition(int *array, ssize_t lo, ssize_t hi, size_t size)
 			hi--;
 		}
 	}
-	return hi;
+	return (hi);
 }
 
 /**
