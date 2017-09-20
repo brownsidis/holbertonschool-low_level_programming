@@ -26,34 +26,6 @@ int get_val(const char *str)
 }
 
 /**
- * comp_val - compares the value in node with the next card
- * @node: card to compare against next card
- *
- * Return: 1 if next card has a smaller value, 0 otherwise
- */
-char comp_val(deck_node_t *node)
-{
-	if (get_val(node->card->value) > get_val(node->next->card->value))
-		return (1);
-	return (0);
-}
-
-/**
- * comp_kind - compares the kind in node with the next card
- * @node: card to compare against next card
- *
- * Return: 1 if next card has a "smaller" kind, 0 otherwise
- */
-char comp_kind(deck_node_t *node)
-{
-	if (node->card->kind > node->next->card->kind)
-		return (2);
-	else if (node->card->kind == node->next->card->kind)
-		return (1);
-	return (0);
-}
-
-/**
  * swap_node - swaps a node with the next node in the list
  * @list: double pointer to the beginning of the list
  * @node: node to swap
@@ -82,7 +54,7 @@ void swap_node(deck_node_t **list, deck_node_t *node)
  */
 void sort_deck(deck_node_t **deck)
 {
-	char swapped = 1, k, v;
+	char swapped = 1, card1, card2;
 	deck_node_t *current;
 
 	if (deck == NULL || *deck == NULL || (*deck)->next == NULL)
@@ -93,9 +65,9 @@ void sort_deck(deck_node_t **deck)
 		swapped = 0;
 		while (current->next != NULL)
 		{
-			k = comp_kind(current);
-			v = comp_val(current);
-			if (k == 2 || (k == 1 && v == 1))
+			card1 = get_val(current->card->value) + 13 * current->card->kind;
+			card2 = get_val(current->next->card->value) + 13 * current->next->card->kind;
+			if (card1 > card2)
 			{
 				swap_node(deck, current);
 				swapped = 1;
@@ -108,9 +80,9 @@ void sort_deck(deck_node_t **deck)
 		swapped = 0;
 		while (current->prev != NULL)
 		{
-			k = comp_kind(current->prev);
-			v = comp_val(current->prev);
-			if (k == 2 || (k == 1 && v == 1))
+			card1 = get_val(current->card->value) + 13 * current->card->kind;
+			card2 = get_val(current->prev->card->value) + 13 * current->prev->card->kind;
+			if (card1 < card2)
 			{
 				swap_node(deck, current->prev);
 				swapped = 1;
