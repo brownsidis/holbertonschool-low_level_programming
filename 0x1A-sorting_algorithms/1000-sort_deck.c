@@ -54,7 +54,7 @@ void swap_node(deck_node_t **list, deck_node_t *node)
  */
 void sort_deck(deck_node_t **deck)
 {
-	char swapped = 1, card1, card2;
+	char swapped = 1, c1, c2;
 	deck_node_t *current;
 
 	if (deck == NULL || *deck == NULL || (*deck)->next == NULL)
@@ -65,8 +65,8 @@ void sort_deck(deck_node_t **deck)
 		swapped = 0;
 		while (current->next != NULL)
 		{
-			card1 = get_val(current->card->value) + 13 * current->card->kind;
-			card2 = get_val(current->next->card->value) + 13 * current->next->card->kind;
+			c1 = get_val(current->card->value) + 13 * current->card->kind;
+			c2 = get_val(current->next->card->value) + 13 * current->next->card->kind;
 			if (card1 > card2)
 			{
 				swap_node(deck, current);
@@ -80,8 +80,8 @@ void sort_deck(deck_node_t **deck)
 		swapped = 0;
 		while (current->prev != NULL)
 		{
-			card1 = get_val(current->card->value) + 13 * current->card->kind;
-			card2 = get_val(current->prev->card->value) + 13 * current->prev->card->kind;
+			c1 = get_val(current->card->value) + 13 * current->card->kind;
+			c2 = get_val(current->prev->card->value) + 13 * current->prev->card->kind;
 			if (card1 < card2)
 			{
 				swap_node(deck, current->prev);
