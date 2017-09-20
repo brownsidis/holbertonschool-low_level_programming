@@ -67,7 +67,7 @@ void sort_deck(deck_node_t **deck)
 		{
 			c1 = get_val(current->card->value) + 13 * current->card->kind;
 			c2 = get_val(current->next->card->value) + 13 * current->next->card->kind;
-			if (card1 > card2)
+			if (c1 > c2)
 			{
 				swap_node(deck, current);
 				swapped = 1;
@@ -82,7 +82,7 @@ void sort_deck(deck_node_t **deck)
 		{
 			c1 = get_val(current->card->value) + 13 * current->card->kind;
 			c2 = get_val(current->prev->card->value) + 13 * current->prev->card->kind;
-			if (card1 < card2)
+			if (c1 < c2)
 			{
 				swap_node(deck, current->prev);
 				swapped = 1;
