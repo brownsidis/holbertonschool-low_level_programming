@@ -12,12 +12,13 @@ At the end of this project you are expected to be able to explain to anyone, wit
 * Version of make: GNU Make 3.81
 ## File Description
 Source files for all Makefiles: [main.c](main.c), [holberton.c](holberton.c), [m.h](m.h)
-[0-Makefile](0-Makefile)
-	Requirements:
-		* name of the executable: `holberton`
-		* rules: `all`
-	  	  * `all`: builds your executable
-		* variables: none
+
+* [0-Makefile](0-Makefile)
+  * Requirements:
+    * name of the executable: `holberton`
+    * rules: `all`
+      * `all`: builds your executable
+    * variables: none
 ```
 julien@ubuntu:~/0x1B. Makefiles$ make -f 0-Makefile
 gcc main.c holberton.c -o holberton
@@ -49,14 +50,14 @@ j#00000000000000w]+]++qw#00000000000000
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 julien@ubuntu:~/0x1B. Makefiles$
 ```
-[1-Makefile](1-Makefile)
-	Requirements:
-                * name of the executable: `holberton`
-                * rules: `all`
-                  * `all`: builds your executable
-                * variables: `CC`, `SRC`
-		  * `CC`: the compiler to be used
-		  * `SRC`: the `.c` files
+* [1-Makefile](1-Makefile)
+  * Requirements:
+    * name of the executable: `holberton`
+    * rules: `all`
+      * `all`: builds your executable
+    * variables: `CC`, `SRC`
+      * `CC`: the compiler to be used
+      * `SRC`: the `.c` files
 ```
 julien@ubuntu:~/0x1B. Makefiles$ make -f 1-Makefile
 gcc main.c holberton.c -o holberton
@@ -64,18 +65,18 @@ julien@ubuntu:~/0x1B. Makefiles$ make -f 1-Makefile
 gcc main.c holberton.c -o holberton
 julien@ubuntu:~/0x1B. Makefiles$
 ```
-[2-Makefile](2-Makefile)
-        Requirements:
-		* name of the executable: `holberton`
-		* rules: `all`
-		  * `all`: builds your executable
-		* variables: `CC`, `SRC`, `OBJ`, `NAME`
-                  * `CC`: the compiler to be used
-                  * `SRC`: the `.c` files
-		  * `OBJ`: the `.o` files
-		  * `NAME`: the name of the executable
-		* The `all` rule should recompile only the updated source files
-		* You are not allowed to have a list of all the `.o` files
+* [2-Makefile](2-Makefile)
+  * Requirements:
+    * name of the executable: `holberton`
+    * rules: `all`
+      * `all`: builds your executable
+    * variables: `CC`, `SRC`, `OBJ`, `NAME`
+      * `CC`: the compiler to be used
+      * `SRC`: the `.c` files
+      * `OBJ`: the `.o` files
+      * `NAME`: the name of the executable
+    * The `all` rule should recompile only the updated source files
+    * You are not allowed to have a list of all the `.o` files
 ```
 julien@ubuntu:~/0x1B. Makefiles$ make -f 2-Makefile
 gcc    -c -o main.o main.c
@@ -89,24 +90,24 @@ gcc    -c -o main.o main.c
 gcc main.o holberton.o -o holberton
 julien@ubuntu:~/0x1B. Makefiles$
 ```
-[3-Makefile](3-Makefile)
-        Requirements:
-		* name of the executable: `holberton`
-		* rules: `all`, `clean`, `oclean`, `fclean`, `re`
-		  * `all`: builds your executable
-		  * `clean`: deletes all Emacs and Vim temporary files along with the executable
-		  * `oclean`: deletes the object files
-		  * `fclean`: deletes all Emacs and Vim temporary files, the executable, and the object files
-		  * `re`: forces recompilation of all source files
-		* variables: `CC`, `SRC`, `OBJ`, `NAME`, `RM`
-                  * `CC`: the compiler to be used
-                  * `SRC`: the `.c` files
-		  * `OBJ`: the `.o` files
-		  * `NAME`: the name of the executable
-		  * `RM`: the command to delete files
-		* The `all` rule should recompile only the updated source files
-		* You are not allowed to have a list of all the `.o` files
-		* The `clean`, `oclean`, `fclean`, and `re` rules should never fail
+* [3-Makefile](3-Makefile)
+  * Requirements:
+    * name of the executable: `holberton`
+    * rules: `all`, `clean`, `oclean`, `fclean`, `re`
+      * `all`: builds your executable
+      * `clean`: deletes all Emacs and Vim temporary files along with the executable
+      * `oclean`: deletes the object files
+      * `fclean`: deletes all Emacs and Vim temporary files, the executable, and the object files
+      * `re`: forces recompilation of all source files
+    * variables: `CC`, `SRC`, `OBJ`, `NAME`, `RM`
+      * `CC`: the compiler to be used
+      * `SRC`: the `.c` files
+      * `OBJ`: the `.o` files
+      * `NAME`: the name of the executable
+      * `RM`: the command to delete files
+    * The `all` rule should recompile only the updated source files
+    * You are not allowed to have a list of all the `.o` files
+    * The `clean`, `oclean`, `fclean`, and `re` rules should never fail
 ```
 julien@ubuntu:~/holberton/curriculum_by_julien/holbertonschool-low_level_programming/0x1B. Makefiles$ ls -1
 0-Makefile
@@ -155,25 +156,25 @@ gcc    -c -o holberton.o holberton.c
 gcc main.o holberton.o -o holberton
 julien@ubuntu:~/0x1B. Makefiles$
 ```
-[4-Makefile](4-Makefile)
-        Requirements:
-		* name of the executable: `holberton`
-		* rules: `all`, `clean`, `oclean`, `fclean`, `re`
-		  * `all`: builds your executable
-		  * `clean`: deletes all Emacs and Vim temporary files along with the executable
-		  * `oclean`: deletes the object files
-		  * `fclean`: deletes all Emacs and Vim temporary files, the executable, and the object files
-		  * `re`: forces recompilation of all source files
-		* variables: `CC`, `SRC`, `OBJ`, `NAME`, `RM`, `CFLAGS`
-                  * `CC`: the compiler to be used
-                  * `SRC`: the `.c` files
-		  * `OBJ`: the `.o` files
-		  * `NAME`: the name of the executable
-		  * `RM`: the command to delete files
-		  * `CFLAGS`: compiler flags `-Wall -Werror -Wextra -pedantic`
-		* The `all` rule should recompile only the updated source files
-		* You are not allowed to have a list of all the `.o` files
-		* The `clean`, `oclean`, `fclean`, and `re` rules should never fail
+* [4-Makefile](4-Makefile)
+  * Requirements:
+    * name of the executable: `holberton`
+    * rules: `all`, `clean`, `oclean`, `fclean`, `re`
+      * `all`: builds your executable
+      * `clean`: deletes all Emacs and Vim temporary files along with the executable
+      * `oclean`: deletes the object files
+      * `fclean`: deletes all Emacs and Vim temporary files, the executable, and the object files
+      * `re`: forces recompilation of all source files
+    * variables: `CC`, `SRC`, `OBJ`, `NAME`, `RM`, `CFLAGS`
+      * `CC`: the compiler to be used
+      * `SRC`: the `.c` files
+      * `OBJ`: the `.o` files
+      * `NAME`: the name of the executable
+      * `RM`: the command to delete files
+      * `CFLAGS`: compiler flags `-Wall -Werror -Wextra -pedantic`
+    * The `all` rule should recompile only the updated source files
+    * You are not allowed to have a list of all the `.o` files
+    * The `clean`, `oclean`, `fclean`, and `re` rules should never fail
 ```
 julien@ubuntu:~/0x1B. Makefiles$ make all -f 4-Makefile
 gcc -Wall -Werror -Wextra -pedantic   -c -o main.o main.c
@@ -181,3 +182,30 @@ gcc -Wall -Werror -Wextra -pedantic   -c -o holberton.o holberton.c
 gcc main.o holberton.o -o holberton
 julien@ubuntu:~/0x1B. Makefiles$
 ```
+* [100-Makefile](100-Makefile)
+  * Requirements:
+    * name of the executable: `holberton`
+    * rules: `all`, `clean`, `oclean`, `fclean`, `re`
+      * `all`: builds your executable
+      * `clean`: deletes all Emacs and Vim temporary files along with the executable
+      * `oclean`: deletes the object files
+      * `fclean`: deletes all Emacs and Vim temporary files, the executable, and the object files
+      * `re`: forces recompilation of all source files
+    * variables: `CC`, `SRC`, `OBJ`, `NAME`, `RM`, `CFLAGS`
+      * `CC`: the compiler to be used
+      * `SRC`: the `.c` files
+      * `OBJ`: the `.o` files
+      * `NAME`: the name of the executable
+      * `RM`: the command to delete files
+      * `CFLAGS`: compiler flags `-Wall -Werror -Wextra -pedantic`
+    * The `all` rule should recompile only the updated source files
+    * You are not allowed to have a list of all the `.o` files
+    * The `clean`, `oclean`, `fclean`, and `re` rules should never fail
+    * You have to use `$(RM)` for the cleaning up rules, but you are not allowed to set the `RM` variable
+    * You are only allowed to use the string `$(CC)` once in your Makefile
+    * You are only allowed to use the string `$(RM)` twice in your Makefile
+    * You are not allowed to use the string `$(CFLAGS)` (but the compiler should still use the flags you set in this variable)
+    * You are not allowed to have an `$(OBJ)` rule
+    * You are not allowed to use the `%.o: %.c` rule
+    * Your Makefile should work even if there is a file in the folder that has the same name as one of your rule
+    * Your Makefile should not compile if the header file `m.h` is missing
