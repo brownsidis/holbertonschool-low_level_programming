@@ -10,7 +10,6 @@ Thanks for visiting my programming projects. The majority of the code was writte
 ## Table of Contents
 * [About](#about)
 * [Requirements](#requirements)
-* [Usage](#usage)
 * [Projects](#projects)
 * [Credits](#credits)
 
