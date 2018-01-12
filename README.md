@@ -1,11 +1,11 @@
 <img src="https://www.holbertonschool.com/assets/holberton-logo-1cc451260ca3cd297def53f2250a9794810667c7ca7b5fa5879a569a457bf16f.png" width="300">
 
-# Low level programming & Algorithms
+# Low Level Programming & Algorithms
 
 <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/212/cisfun.jpg" width="500">
 
 ## Welcome
-Thanks for visiting my programming projects. The majority of the code was written in C, with a few files written in Assembly.
+Thank you for visiting my programming projects. The majority of the code was written in C, with a few files written in Assembly.
 
 ## Table of Contents
 * [About](#about)
@@ -14,20 +14,22 @@ Thanks for visiting my programming projects. The majority of the code was writte
 * [Credits](#credits)
 
 ## About
-This repository contains projects on C programming language. The projects cover:
+This repository contains projects on the C programming language. The projects cover:
 - Compilation
 - Commenting code and following a coding style standard
-- Variables, types, operators, expressions Loops, nested loops
+- Variables, types, operators, expressions, loops, nested loops
 - Conditional statements
 - Functions
-- Pre processor, macros, header files Pointers, pointers to pointers, pointers to functions, pointer arithmetic
-- Arrays, multidimensional arrays Structures
+- Pre-processor, macros, header files, pointers, double pointers, function pointers, pointer arithmetic
+- Arrays, multidimensional arrays, structures
 - Static and dynamic libraries
 - Program arguments
 - Dynamic allocation
-- Virtual Memory, Heap and stack
+- Virtual memory, heap, stack
 - Binary operations
 - Makefiles
+- Sorting and search algorithms
+and more!
 
 ## Requirements
 * Ubuntu 14.04 LTS
