@@ -58,9 +58,9 @@ This repository contains projects on C programming language. The projects cover:
 22. [0x15-simple_shell](https://github.com/alexaorrico/simple_shell) ** C Shell project **
 23. [0x16-doubly_linked_lists](./0x16-doubly_linked_lists)
 24. [0x17-dynamic_libraries](./0x17-dynamic_libraries)
-25. [0x18-stacks_queues_lifo_fifo @ 2ee51b6](./0x18-stacks_queues_lifo_fifo) ** Monty ByteCode Interpreter **
+25. [0x18-stacks_queues_lifo_fifo](./0x18-stacks_queues_lifo_fifo) ** Monty ByteCode Interpreter **
 26. [0x19-hash_tables](./0x19-hash_tables)
-27. [0x1A-sorting_algorithms @ 282bebb](./0x1A-sorting_algorithms) ** Sorting algorithms project **
+27. [0x1A-sorting_algorithms](./0x1A-sorting_algorithms) ** Sorting algorithms project **
 28. [0x1B-makefiles](./0x1B-makefiles)
 29. [0x1C-binary_trees](./0x1C-binary_trees)
 30. [0x1D-search_algorithms](./0x1D-search_algorithms) ** Search algorithms project **
