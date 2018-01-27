@@ -10,7 +10,7 @@ An introductory project on:
 ## Requirements
 - Ubuntu 14.04
 - gcc 4.8.4
-- No standard library functions
+- no standard library functions
 - allowed to use [_putchar](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c)
 ## File Descriptions
 ### Mandatory
