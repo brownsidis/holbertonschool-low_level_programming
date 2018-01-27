@@ -1,16 +1,11 @@
-# 
+# 0x04. C - Pointers, arrays and strings
 ## About
 An introductory project on:
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+- pointers and how to use them
+- arrays and how to use them
+- the differences between pointers and arrays
+- How to manipulate strings
+- Scope of variables
 ## Requirements
 - Ubuntu 14.04
 - gcc 4.8.4
