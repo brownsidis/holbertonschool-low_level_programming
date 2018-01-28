@@ -15,6 +15,7 @@ An introductory project on:
 
 **[3-array_range.c](3-array_range.c)** - function that creates an array of integers.
 
+### Advanced
 **[100-realloc.c](100-realloc.c)** - function that reallocates a memory block using `malloc` and `free`.
 
 **[101-mul.c](101-mul.c)** - multiplies two positive numbers, stored as strings.
