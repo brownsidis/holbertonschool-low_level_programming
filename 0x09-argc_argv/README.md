@@ -19,4 +19,5 @@ An introductory project on:
 
 **[4-add.c](4-add.c)** - adds all numbers passed to the program as arguments.
 
+### Advanced
 **[100-change.c](100-change.c)** - prints the minimum number of coins to make change for an amount of money in cents.
