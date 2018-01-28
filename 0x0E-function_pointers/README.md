@@ -22,11 +22,11 @@ An introductory project on:
 **[3-main.c](3-main.c)** - performs simple operations passed in as parameters.
 
 **[3-op_functions.c](3-op_functions.c)** - contains the following 5 functions:
-- _int op_add(int a, int b)_ - returns the sum of a and b.
-- _int op_sub(int a, int b)_ - returns the difference of a and b.
-- _int op_mul(int a, int b)_ - returns the product of a and b.
-- _int op_div(int a, int b)_ - returns the result of the division of a by b.
-- _int op_mod(int a, int b)_ - returns the remainder of the division of a by b.
+- `int op_add(int a, int b)` - returns the sum of a and b.
+- `int op_sub(int a, int b)` - returns the difference of a and b.
+- `int op_mul(int a, int b)` - returns the product of a and b.
+- `int op_div(int a, int b)` - returns the result of the division of a by b.
+- `int op_mod(int a, int b)` - returns the remainder of the division of a by b.
 
 **[3-get_op_func.c](3-get_op_func.c)** - selects the correct function from [3-op_functions.c](3-op_functions.c) to perform the operation asked by the user.
 
