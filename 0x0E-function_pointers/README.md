@@ -30,4 +30,5 @@ An introductory project on:
 
 **[3-get_op_func.c](3-get_op_func.c)** - selects the correct function from [3-op_functions.c](3-op_functions.c) to perform the operation asked by the user.
 
+### Advanced
 **[100-main_opcodes.c](100-main_opcodes.c)** - prints the opcodes of its own main function up to a specified number of bytes.
