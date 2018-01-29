@@ -8,7 +8,7 @@ An introductory project on:
 - Ubuntu 14.04
 - gcc 4.8.4
 ## File Descriptions
-**[hash_tables.h](hash_tables.h)** - header file containing all function prototypes and the definitions for `hash_node_t`, `hash_table_t`, `shash_node_t`, and `shash_table_t`.
+**[hash_tables.h](hash_tables.h)** - header file containing all function prototypes and the definitions for types `hash_node_t`, `hash_table_t`, `shash_node_t`, and `shash_table_t`.
 
 ### Mandatory
 **[0-hash_table_create.c](0-hash_table_create.c)** - function that creates a hash table.
