@@ -37,7 +37,7 @@ int binary_search_sub_array(int *array, size_t low, size_t high, int value)
 
 	if (low > high)
 		return (-1);
-	print_array(array, high + 1 - low);
+	print_array(array + low, high + 1 - low);
 	m = (high + low) / 2;
 	if (array[m] == value)
 		return (m);
