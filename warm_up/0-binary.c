@@ -42,11 +42,7 @@ int binary_search_sub_array(int *array, size_t low, size_t high, int value)
 	if (array[m] == value)
 		return (m);
 	if (array[m] > value)
-	{
-		if (m == 0)
-			return (-1);
-		return (binary_search_sub_array(array, low, m - 1, value));
-	}
+		return (binary_search_sub_array(array, low, m, value));
 	return (binary_search_sub_array(array, m + 1, high, value));
 }
 
